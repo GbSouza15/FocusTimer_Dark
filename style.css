@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+}
+
+main {
+  height: 33.6rem;
+  display: flex;
+  width: 82.1rem;
+  gap: 19.2rem;
+  align-self: center;
+}
+
+.timer {
+  margin-top: 25.4rem;
+  margin-left: 23rem;
+  width: 32rem;
+  display: flex;
+  justify-content: center;
+  
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 12.6rem;
+  line-height: 14.8rem;
+  text-transform: uppercase;
+  color: #323238;
+  
+}
+.controls {
+  margin-top: 1.7rem;
+  margin-left: 23rem;
+  width: 32rem;
+
+  display: flex;
+  gap: 4rem;
+}
+
+.controls button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.forest svg{
+  margin-bottom: 3.2rem;
+}
+
+.rain svg {
+  margin-bottom: 3.2rem;
+}
+
+.coffeeshop svg {
+  margin-bottom: 3.2rem;
+}
+
+.fireplace svg {
+  margin-bottom: 3.2rem;
+}
+
+.cards button {
+  width: 13.8rem;
+  height: 15.2rem;
+  border-radius: 2.4rem;
+  cursor: pointer;
+}
+
+.cards {
+  margin-top: 19.6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+
+}
+
+.cards button:hover{
+  background-color: hsla(194, 97%, 31%, 1);
+}
+
+.cards button:hover svg path{
+  fill: white;
+}
+
+.cards button {
+  border: none;
+  background-color: #E1E1E6;
+  
+}
+
+.cards .active{
+ background: hsla(194, 97%, 31%, 1);
+}
+
+.active svg path {
+  fill: white;
+}
+
+/* Modo Escuro*/
+
+.darkmode .darkon{
+  position: absolute;
+  top: 6rem;
+  right: 6rem;
+}
+.darkmode .darkoff{
+  position: absolute;
+  top: 6rem;
+  right: 6rem;
+}
+
+.darkmode button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.dark .cards svg path{
+  fill: #C4C4CC;
+}
+
+.dark{
+  background: #121214;
+}
+.dark .timer {
+  color: white;
+}
+
+/* Botões / Cards */
+.dark .controls button svg path {
+  fill: white;
+}
+.dark .cards button:hover{
+  background-color: #0A3442;
+}
+
+.dark .cards button{
+  background: #29292E;
+}
+
+.dark .cards .active{
+  background: #0A3442;
+ }
+
+ .dark .active svg path {
+  fill: white;
+}
+
+.dark input {
+  margin-top: 3.2rem;
+  height: 0.4rem;
+  width: 9rem;
+  -webkit-appearance: none;
+  background: white;
+  outline: none;
+  border-radius: 5px;
+}
+
+.dark input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+
+  background: white;
+}
+
+/*--------------*/
+
+.hide {
+  visibility: hidden;
+}
+
+
+input {
+  margin-top: 3.2rem;
+  height: 0.4rem;
+  width: 9rem;
+  -webkit-appearance: none;
+  background: #323238;
+  outline: none;
+  border-radius: 5px;
+}
+
+input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+
+  background: #323238;
+}
+
+.active input{
+  background: white;
+}
+.active ::-webkit-slider-thumb{
+  background: white;
+}
+
+.volforest {
+  position: relative;
+}
+
+.volforest input {
+  position: absolute;
+  bottom: 3rem;
+  left: 2.4rem;
+}
+
+.volrain {
+  position: relative;
+}
+
+.volrain input {
+  position: absolute;
+  bottom: 3rem;
+  left: 2.4rem;
+}
+
+.volcoffeeshop {
+  position: relative;
+}
+
+.volcoffeeshop input {
+  position: absolute;
+  bottom: 3rem;
+  left: 2.4rem;
+}
+
+.volfireplace {
+  position: relative;
+}
+
+.volfireplace input {
+  position: absolute;
+  bottom: 3rem;
+  left: 2.4rem;
+}
