@@ -200,13 +200,6 @@ input::-webkit-slider-thumb {
   background: #323238;
 }
 
-.active input{
-  background: white;
-}
-.active ::-webkit-slider-thumb{
-  background: white;
-}
-
 .volforest {
   position: relative;
 }
@@ -245,4 +238,12 @@ input::-webkit-slider-thumb {
   position: absolute;
   bottom: 3rem;
   left: 2.4rem;
+}
+
+button.active ~ input{
+  background: white;
+}
+
+button.active ~ input::-webkit-slider-thumb{
+  background: white;
 }
